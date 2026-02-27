@@ -1,66 +1,76 @@
 # Neon Sky Battle
 
-An epic multiplayer airplane battle game with neon aesthetics, built with pure HTML5 Canvas and JavaScript.
+An epic multiplayer airplane battle game with stunning neon aesthetics, built with pure HTML5 Canvas and JavaScript.
 
-## Features
+![Game Screenshot](screenshot.png)
 
-- **Multiplayer System**: 4-digit room codes for easy joining
-- **4 Aircraft Types**: Fighter, Tank, Speedster, and Bomber - each with unique stats
-- **Power-ups**: Speed boost, Shield, Rapid fire, and Bomb
-- **Visual Effects**: Particle explosions, trail effects, screen shake, animated backgrounds
-- **Audio**: Shooting sounds, explosion effects, background music
-- **Mobile Support**: Touch controls for mobile devices
-- **Responsive Design**: Works on desktop and mobile
+## 🎮 Play Now
 
-## How to Play
+**Live Game:** https://leo-zhang-1121.github.io/airplane-battle
 
-1. Open the game in your browser
-2. Click "Create Room" to generate a 4-digit room code
-3. Share the code with friends
-4. Friends click "Join Room" and enter the code
-5. Select your aircraft type
-6. Battle!
+## ✨ Features
 
-### Controls
+### Multiplayer System
+- 🔢 **4-digit room codes** - Easy to share and join
+- 🌐 **Real-time multiplayer** - WebRTC-like experience with polling
+- 👥 **2+ players** - Battle with friends or AI bots
 
-**Desktop:**
-- WASD or Arrow Keys: Move
-- Spacebar or Z: Shoot
-
-**Mobile:**
-- On-screen touch controls
-
-## Game Mechanics
-
-- **Fighter**: Balanced stats, good for beginners
-- **Tank**: High health, slow but powerful
-- **Speedster**: Fast and rapid fire, low health
-- **Bomber**: Medium stats, explosive potential
+### Aircraft Types
+| Type | Speed | Health | Fire Rate | Special |
+|------|-------|--------|-----------|---------|
+| 🚀 Fighter | ★★★★☆ | ★★★☆☆ | ★★★★☆ | Balanced |
+| 🛡️ Tank | ★★☆☆☆ | ★★★★★ | ★★★☆☆ | High durability |
+| ⚡ Speedster | ★★★★★ | ★★☆☆☆ | ★★★★★ | Fast & agile |
+| 💣 Bomber | ★★★☆☆ | ★★★★☆ | ★★☆☆☆ | Area damage |
 
 ### Power-ups
+- ⚡ **Speed Boost** - Move 50% faster (5s)
+- 🛡️ **Shield** - Invulnerability (8s)
+- 🔥 **Rapid Fire** - Double fire rate (6s)
+- 💣 **Bomb** - Damage all nearby enemies
 
-- ⚡ **Speed Boost**: Move faster for 5 seconds
-- 🛡️ **Shield**: Invulnerable for 8 seconds
-- 🔥 **Rapid Fire**: Shoot faster for 6 seconds
-- 💣 **Bomb**: Deals damage to all nearby enemies
+### Visual Effects
+- 💥 Particle explosions
+- ✈️ Aircraft trail effects
+- 📳 Screen shake on hit
+- ☁️ Animated clouds and stars
+- 🌈 Neon glow effects
+- 🎯 Smooth 60fps animations
 
-## Technical Details
+### Audio
+- 🔫 Shooting sounds
+- 💣 Explosion effects
+- 🎵 Background music
+- ✨ Power-up sounds
 
-- Pure HTML5 Canvas + JavaScript (no external game engines)
-- Simulated multiplayer with polling-based sync
-- 60fps smooth animations
-- Particle systems for visual effects
-- Responsive design for all screen sizes
+### UI/UX
+- 🏠 Main menu with create/join room
+- 📊 In-game HUD (health, score, minimap)
+- 🏆 Leaderboard
+- 📱 Mobile touch controls
+- 📐 Responsive design
 
-## Deployment
+## 🎯 How to Play
 
-This game is deployed on GitHub Pages at:
-https://leo-zhang-1121.github.io/airplane-battle
+### Desktop Controls
+- **WASD** or **Arrow Keys** - Move your aircraft
+- **Spacebar** or **Z** - Shoot
 
-## Local Development
+### Mobile Controls
+- On-screen touch buttons for movement and shooting
 
-To run locally:
+### Gameplay Tips
+1. Collect power-ups to gain advantages
+2. Use the minimap to track enemies
+3. Different aircraft suit different playstyles
+4. Lead your shots when targeting moving enemies
 
+## 🚀 Quick Start
+
+### Play Online
+Simply visit: https://leo-zhang-1121.github.io/airplane-battle
+
+### Play Locally
 ```bash
 # Clone the repository
 git clone https://github.com/leo-zhang-1121/airplane-battle.git
@@ -68,16 +78,60 @@ git clone https://github.com/leo-zhang-1121/airplane-battle.git
 # Navigate to the directory
 cd airplane-battle
 
-# Open in browser (or use a local server)
-open index.html
+# Start a local server
+python3 -m http.server 8080
+
+# Open in browser
+open http://localhost:8080
 ```
 
-Or use a simple Python server:
-```bash
-python3 -m http.server 8000
+## 🛠️ Technical Details
+
+- **Engine**: Pure HTML5 Canvas + JavaScript (no external game engines)
+- **Multiplayer**: Simulated with polling-based sync (WebRTC-ready architecture)
+- **Rendering**: 60fps with requestAnimationFrame
+- **Physics**: Custom collision detection and particle systems
+- **Audio**: Web Audio API for sound effects
+- **Mobile**: Touch event handling with virtual controls
+
+## 📁 Project Structure
+
 ```
-Then open http://localhost:8000
+airplane-battle/
+├── index.html      # Main game file (all-in-one)
+├── README.md       # This file
+├── package.json    # Project metadata
+└── .github/
+    └── workflows/
+        └── deploy.yml  # GitHub Pages deployment
+```
 
-## License
+## 🚢 Deployment
 
-MIT License - Feel free to use and modify!
+The game is automatically deployed to GitHub Pages using GitHub Actions.
+
+### Manual Deployment
+1. Fork this repository
+2. Go to Settings → Pages
+3. Select "Deploy from a branch"
+4. Choose "main" branch and "/ (root)" folder
+5. Your game will be live at `https://yourusername.github.io/airplane-battle`
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest features
+- Submit pull requests
+
+## 📜 License
+
+MIT License - Feel free to use, modify, and distribute!
+
+## 🙏 Credits
+
+Created with ❤️ by Leo Zhang
+
+---
+
+**Enjoy the game! May the best pilot win! 🏆**
